@@ -1,11 +1,11 @@
-<!doctype html>
-<html>
-<head>
-  <title>Page Sandbox</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-  <base target="_blank">
-  <style>
+<!DOCTYPE html>
+<!-- saved from url=(0038)file:///C:/Users/gygd/Desktop/PSB.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PSB</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<!--<base target="_blank">--><!--<base href="." target="_blank">--><base href="." target="_blank">
+<style>
     body {
       padding: 0 0.5em;
     }
@@ -28,19 +28,22 @@
   </style>
 </head>
 <body>
-  <div class="box">
-    <input id="txtURL" type="text" value="www.google.com" autofocus>
-  </div>
-  <div class="box">
-    <button id="btnGo">Go</button>
-  </div>
-  <div class="box">
-    <span>切换线路:</span>
-    <select id="selNode"></select>
-  </div>
-  <div class="box" id="list">
-  </div>
-  <script>
+<div class="box" style="
+    display: none;
+">
+<input id="txtURL" type="text" value="e-hentail.org" autofocus="">
+</div>
+<div class="box">
+<button id="btnGo">Go</button>
+</div>
+<div class="box" style="
+    display: none;
+">
+<span>切换线路:</span>
+<select id="selNode"><option id="--demo-hk" value="demo-hk">演示服务-香港节点</option><option id="--demo-sg" value="demo-sg">演示服务-新加坡节点</option><option id="--mysite" value="mysite">当前站点</option></select>
+</div>
+
+<script>
     const PAGE_CONF_SET = 110
     const PAGE_CONF_GET = 111
 
@@ -164,5 +167,5 @@
       updateSelected()
     }
   </script>
-</body>
-</html>
+
+</body></html>
